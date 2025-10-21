@@ -13,5 +13,5 @@ server:
   port: 8080
 
 custom:
-  message: "초기 메시지 - PROD 환경입니다"
+  message: "변경된 메시지 - DEV 환경입니다"
   version: "1.0.0"
