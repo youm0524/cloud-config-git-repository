@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/msa_step02_order?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+
+#서비스 디스커버리 설정(localhost:8081 대신 payment-service 라는 이름으로
+#결제 서비스를 탐색
+#payment-service 이름은 spring.application.name 기반
+service:
+  payment:
+    url: http://payment-service/payments
+
+server:
+  port: 8080
