@@ -11,3 +11,7 @@ service:
 
 server:
   port: 8080
+
+custom:
+  message: "초기 메시지 - PROD 환경입니다"
+  version: "1.0.0"
